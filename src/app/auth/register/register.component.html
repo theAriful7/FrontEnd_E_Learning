@@ -1,0 +1,42 @@
+<div class="login-wrapper">
+  <!-- Left Side: Illustration / Banner -->
+  <div class="left-side">
+    <h1 class="banner-title">শিক্ষালয়</h1>
+    <p class="banner-subtitle">Learn. Explore. Grow.</p>
+    <div class="illustration"></div>
+  </div>
+
+  <!-- Right Side: Register Form -->
+  <div class="right-side">
+    <div class="login-card">
+      <h2>Create Account</h2>
+      <form>
+        <div class="input-group">
+          <input type="email" required />
+          <label>Email</label>
+        </div>
+        <div class="input-group">
+          <input type="password" required />
+          <label>Password</label>
+        </div>
+        <div class="input-group">
+          <input type="password" required />
+          <label>Confirm Password</label>
+        </div>
+        <button type="submit" class="register-btn">Register</button>
+
+        <div class="signup-text">
+          <p>Already have an account?</p>
+<button type="button" [routerLink]="['/login']" class="login-btn">
+  Login
+</button>
+
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Animated Background Circles -->
+  <div class="animated-bg"></div>
+</div>

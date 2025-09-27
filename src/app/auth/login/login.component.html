@@ -1,0 +1,77 @@
+<div class="login-page">
+  <div class="login-card" [@slideUpFade]>
+    <!-- Login Card এর ভেতরে রাখুন -->
+    <div style="width:100%;">
+
+      <!-- Welcome to (left align) -->
+      <div style="text-align:left; margin-bottom:0px;">
+        <h5 style="
+        margin: 0;
+        font-size:14px;
+        font-weight:600;
+        color:#475569;
+        font-family: Poppins, 'Noto Sans Bengali', sans-serif;">
+          Welcome to
+        </h5>
+      </div>
+
+      <!-- শিক্ষালয় (center align) -->
+      <div style="text-align:center;">
+        <h1 style="
+        margin:0;
+        padding: 4px;
+        font-size:42px;
+        line-height:1.2;
+        font-weight:800;
+        font-family: 'Noto Sans Bengali', Poppins, sans-serif;
+        background: linear-gradient(90deg,#06b6d4 0%, #7c3aed 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;">
+          শিক্ষালয়
+        </h1>
+      </div>
+
+    </div>
+
+
+
+    <p class="subtitle" style="font-weight: bold;">Learn anything, anytime, anywhere</p>
+
+    <form>
+      <div class="input-group">
+        <input type="email" placeholder="Email">
+      </div>
+
+      <div class="input-group">
+        <input type="password" placeholder="Password">
+      </div>
+
+      <button routerLink="/admin" type="button" class="btn-login">Login</button>
+    </form>
+
+    <div class="signup-text" style="text-align:center; margin-top:20px; font-family: 'Poppins', sans-serif;">
+      <p style="margin-bottom:10px; font-weight:bold; font-size:14px;">
+        Don’t have an account?
+      </p>
+
+      <button routerLink="/register"
+        style="
+            padding:10px 25px;
+            background: linear-gradient(135deg,#6a11cb,#2575fc);
+            color:#fff;
+            font-weight:600;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:14px;
+            transition: all 0.3s ease;
+        "
+        onmouseover="this.style.background='linear-gradient(135deg,#2575fc,#6a11cb)'; this.style.transform='translateY(-2px) scale(1.02)'"
+        onmouseout="this.style.background='linear-gradient(135deg,#6a11cb,#2575fc)'; this.style.transform='translateY(0) scale(1)'">
+        Register
+      </button>
+    </div>
+
+  </div>
+</div>

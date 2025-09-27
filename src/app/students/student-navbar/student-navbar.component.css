@@ -1,0 +1,75 @@
+/* Top Navbar */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0; /* fix gap */
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  background: linear-gradient(90deg,#1e3a8a,#2575fc);
+  color:#fff;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.top-nav .logo {
+  font-family: 'Noto Sans Bengali', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  color: #fff;
+}
+
+.top-actions {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.top-actions li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.top-actions li a:hover {
+  background: #facc15;
+  color: #1e3a8a;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: linear-gradient(to bottom,#1e3a8a,#2575fc);
+  color:#fff;
+  padding-top:60px; /* navbar height */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; /* full height */
+  z-index: 999;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+  margin-bottom: 5px;
+}
+
+.sidebar ul li a:hover {
+  background: #facc15;
+  color: #1e3a8a;
+}

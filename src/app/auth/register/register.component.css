@@ -1,0 +1,189 @@
+/* Wrapper */
+.login-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* Left Side */
+.left-side {
+  flex: 1;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  position: relative;
+}
+
+.banner-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.banner-subtitle {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+/* Illustration Placeholder */
+.illustration {
+  width: 80%;
+  height: 300px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Right Side */
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f4f6;
+  position: relative;
+}
+
+/* Form Card */
+.login-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  width: 350px;
+  text-align: center;
+  position: relative;
+}
+
+.login-card h2 {
+  margin-bottom: 30px;
+  color: #4c4c6d;
+}
+
+/* Input Fields */
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 10px 10px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  color: #999;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: -20px;
+  font-size: 12px;
+  color: #764ba2;
+}
+
+/* Register Button */
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(118,75,162,0.3);
+}
+
+/* Signup Text / Login Button */
+.signup-text {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.signup-text p {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.login-btn {
+  padding: 10px 25px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Animated Background Circles */
+.animated-bg::before, .animated-bg::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.05);
+  animation: float 8s ease-in-out infinite;
+}
+
+.animated-bg::before {
+  width: 600px;
+  height: 600px;
+  top: -100px;
+  left: -150px;
+}
+
+.animated-bg::after {
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 70%;
+  animation-duration: 10s;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+  .login-wrapper {
+    flex-direction: column;
+  }
+
+  .left-side, .right-side {
+    flex: unset;
+    width: 100%;
+    height: 50vh;
+  }
+}
